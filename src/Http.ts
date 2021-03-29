@@ -6,7 +6,7 @@ const clans = [
 	'#2PPU0VJJ9', '#2VQPRVRU', '#2Y8LYLPL2', '#2YQ98UJVQ', '#2YQCPU0GP', '#2YY0RU90P', '#89QG2QCQ'
 ];
 
-interface Promises {
+export interface Promises {
 	resolve(): void;
 	promise: Promise<void>;
 }
@@ -61,7 +61,7 @@ export default class Http {
 	private tokenIndex = 0;
 	private tokens: string[] = [];
 	private queue = new QueueThrottler();
-	private keyName = 'ClashPerk_API_Status_Token';
+	private keyName = 'API_Status_Token';
 
 	public async fetch(path: string) {
 		await this.queue.wait();

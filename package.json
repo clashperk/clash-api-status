@@ -1,22 +1,14 @@
 {
-	"name": "api-status",
-	"version": "1.0.0",
-	"description": "",
+	"name": "clash-of-clans-api-status",
+	"version": "1.0.1",
+	"description": "Clash of Clans API Status and Response Time",
 	"main": "dist/index.js",
-	"scripts": {
-		"start": "tsc && node dist/index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/clashperk/api-status.git"
-	},
-	"keywords": [],
 	"author": "SUVAJIT <suvajit.me@gmail.com>",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/clashperk/api-status/issues"
+	"license": "MIT",
+	"scripts": {
+		"postinstall": "tsc",
+		"start": "node dist/index.js"
 	},
-	"homepage": "https://github.com/clashperk/api-status#readme",
 	"dependencies": {
 		"dotenv": "^8.2.0",
 		"express": "^4.17.1",
@@ -28,6 +20,15 @@
 		"@types/node-fetch": "^2.5.7",
 		"typescript": "^4.1.2"
 	},
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/clashperk/clash-of-clans-api-status.git"
+	},
+	"bugs": {
+		"url": "https://github.com/clashperk/clash-of-clans-api-status/issues"
+	},
+	"homepage": "https://github.com/clashperk/clash-of-clans-api-status#readme",
 	"engines": {
 		"node": ">=14.x"
 	}
